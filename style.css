@@ -444,3 +444,12 @@ footer a:hover { opacity: 1 !important; color: #2563eb !important; }
     line-height: 1.6;
     font-size: 1rem;
 }
+/* MOBILE SEULEMENT : 2x2 boutons */
+@media (max-width: 768px) {
+  .d-flex.justify-content-center.gap-3.col-lg-12 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important; /* 2 colonnes */
+    grid-template-rows: repeat(2, auto) !important; /* 2 lignes */
+    gap: 1rem !important;
+    padding: 0 1rem;
+  }}
